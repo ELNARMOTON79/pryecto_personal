@@ -52,4 +52,5 @@ if(isset($_POST["log_in"])) {
 			<p id="user-agreement">Nota: Los datos de acceso son los mismos de tu correo Universitario. ( No incluir el @ucol.mx )</p>
 		</div>
 	</body>
+	<script src="scripts/index_script.js"></script>
 </html>

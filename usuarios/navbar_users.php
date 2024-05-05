@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Dashboard</title>
+  <title>Usuarios</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css'>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css'>
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="../styles/style.css">
   <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Logo_de_la_Universidad_de_Colima.svg/2048px-Logo_de_la_Universidad_de_Colima.svg.png">
   <style>
     .contenido {
@@ -53,33 +53,32 @@
         <a class="nav-link" href="#"><i class="fas fa-user-circle"></i>Bienvenido <?php echo $_SESSION['usuario']; ?></a>
       </li>
       <li class="nav-item">
-        <a href="usuarios/menu_usuario.php"><i class="fas fa-user"></i>Usuarios</a>
+        <a href="menu_usuarios.php"><i class="fas fa-home"></i>Crear Usuario</a>
       </li>
       
       <li class="nav-item">
-        <a href="maestros/menu_maestros.php"><i class="fas fa-exclamation-triangle"></i>Maestros</a>
+        <a href="menu_maestros.php"><i class="fas fa-exclamation-triangle"></i>Editar Usuario</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="alumnos/menu_alumnos.php"><i class="fas fa-certificate"></i>Alumnos</a>
+        <a class="nav-link" href="menu_alumnos.php"><i class="fas fa-certificate"></i>Borrar Usuario</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="acciones/menu_acciones.php"><i class="fas fa-certificate"></i>Acciones</a>
+        <a class="nav-link" href="../pag_admin.php"><i class="fas fa-arrow-left"></i>Regresar</a>
       </li>
-      <?php if (isset($_SESSION['usuario'])) { ?>
-        <li class="nav-item">
-          <a class="nav-link" href="logout.php"><i class="fas fa-sign-out-alt"></i>Cerrar sesión</a>
-        </li>
-      <?php } ?>
     </ul>
   </div>
 </nav>
 
-
+<div id="contenido-bienvenido" class="contenido">
+  <div style="text-align: center;">
+    <h2>Bienvenido <?php echo $_SESSION['usuario']; ?>, Que vamos a hacer hoy?</h2>
+  </div>
+</div>
 
 <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
 <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
 <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js'></script>
-<script src="scripts/script.js"></script>
+<script src="../scripts/script.js"></script>
 
 <script>
   $(document).ready(function() {
