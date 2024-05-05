@@ -47,6 +47,10 @@ if(isset($_POST["log_in"])) {
 					<input type="text" name="usuario" class="input" accesskey="u" size="25" value=""  placeholder="Usuario">
 					<input type="password" name="contra" class="input" accesskey="p" size="25"   value=""  placeholder="Contrase&ntilde;a">
 					<input name="log_in" type="submit" class="button">
+					<!-- Forgot password -->
+					<div class="w-full mt-12">
+          				<a href="recuperar_contra/recovery.php" class="mx-auto text-white text-[1rem] underline">I forgot my password</a>
+					</div>
 				</form>
 			</div>
 			<p id="user-agreement">Nota: Los datos de acceso son los mismos de tu correo Universitario. ( No incluir el @ucol.mx )</p>
