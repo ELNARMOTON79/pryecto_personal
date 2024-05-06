@@ -48,6 +48,7 @@ if(isset($_POST["log_in"])) {
 					<input type="password" name="contra" class="input" accesskey="p" size="25"   value=""  placeholder="Contrase&ntilde;a">
 					<input name="log_in" type="submit" class="button">
 					<!-- Forgot password -->
+					<br><br>
 					<div class="w-full mt-12">
           				<a href="recuperar_contra/recovery.php" class="mx-auto text-white text-[1rem] underline">I forgot my password</a>
 					</div>

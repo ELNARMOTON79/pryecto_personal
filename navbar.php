@@ -57,13 +57,13 @@
       </li>
       
       <li class="nav-item">
-        <a href="maestros/menu_maestros.php"><i class="fas fa-exclamation-triangle"></i>Maestros</a>
+        <a href="maestros/menu_maestros.php"><i class="fas fa-chalkboard-teacher"></i>Maestros</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="alumnos/menu_alumnos.php"><i class="fas fa-certificate"></i>Alumnos</a>
+        <a class="nav-link" href="alumnos/menu_alumnos.php"><i class="fas fa-user-graduate"></i>Alumnos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="acciones/menu_acciones.php"><i class="fas fa-certificate"></i>Acciones</a>
+        <a class="nav-link" href="acciones/menu_acciones.php"><i class="fas fa-cogs"></i>Acciones</a>
       </li>
       <?php if (isset($_SESSION['usuario'])) { ?>
         <li class="nav-item">

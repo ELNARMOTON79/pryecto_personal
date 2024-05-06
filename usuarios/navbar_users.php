@@ -53,14 +53,14 @@
         <a class="nav-link" href="#"><i class="fas fa-user-circle"></i>Bienvenido <?php echo $_SESSION['usuario']; ?></a>
       </li>
       <li class="nav-item">
-        <a href="menu_usuarios.php"><i class="fas fa-home"></i>Crear Usuario</a>
+        <a href="menu_usuarios.php"><i class="fas fa-user-plus"></i>Crear Usuario</a>
       </li>
       
       <li class="nav-item">
-        <a href="menu_maestros.php"><i class="fas fa-exclamation-triangle"></i>Editar Usuario</a>
+        <a href="menu_maestros.php"><i class="fas fa-user-edit"></i>Editar Usuario</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="menu_alumnos.php"><i class="fas fa-certificate"></i>Borrar Usuario</a>
+        <a class="nav-link" href="menu_alumnos.php"><i class="fas fa-user-times"></i>Borrar Usuario</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="../pag_admin.php"><i class="fas fa-arrow-left"></i>Regresar</a>

@@ -53,14 +53,14 @@
         <a class="nav-link" href="#"><i class="fas fa-user-circle"></i>Bienvenido <?php echo $_SESSION['usuario']; ?></a>
       </li>
       <li class="nav-item">
-        <a href="menu_usuarios.php"><i class="fas fa-home"></i>Justificante</a>
+        <a href="menu_usuarios.php"><i class="fas fa-file-alt"></i>Justificante</a>
       </li>
       
       <li class="nav-item">
-        <a href="menu_maestros.php"><i class="fas fa-exclamation-triangle"></i>Incidencias</a>
+        <a href="menu_maestros.php"><i class="fas fa-exclamation-circle"></i>Incidencias</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="menu_alumnos.php"><i class="fas fa-certificate"></i>Casos Especiales</a>
+        <a class="nav-link" href="menu_alumnos.php"><i class="fas fa-users"></i>Casos Especiales</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="../pag_admin.php"><i class="fas fa-arrow-left"></i>Regresar</a>
@@ -68,12 +68,6 @@
     </ul>
   </div>
 </nav>
-
-<div id="contenido-bienvenido" class="contenido">
-  <div style="text-align: center;">
-    <h2>Bienvenido <?php echo $_SESSION['usuario']; ?>, Que vamos a hacer hoy?</h2>
-  </div>
-</div>
 
 <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
 <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
