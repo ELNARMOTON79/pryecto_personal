@@ -1,7 +1,13 @@
 <?php
+    //Cerrar sesion
     session_start();
-    session_destroy();
 
-    header('Location: index.php'); // Redirige al usuario a la página de inicio de sesión
-    exit;
+    // Antes de destruir la sesión, asegúrate de que las páginas no se almacenen en caché
+    header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+    header("Cache-Control: post-check=0, pre-check=0", false);
+    header("Pragma: no-cache");
+
+    session_destroy();
+    header('Location: index.php');
+
 ?>
